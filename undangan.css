@@ -1,0 +1,63 @@
+/* General styles for the page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  margin: 0;
+  padding: 0;
+}
+
+.invitation-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Header styles */
+header h1 {
+  font-size: 36px;
+  color: #4b8b8c;
+}
+
+header h2 {
+  font-size: 28px;
+  color: #4b8b8c;
+  margin-top: -10px;
+  font-style: italic;
+}
+
+/* Event details styles */
+.event-details p {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.details {
+  margin-top: 20px;
+}
+
+.details p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* RSVP section */
+.rsvp p {
+  font-size: 16px;
+  color: #333;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* Footer */
+footer p {
+  font-size: 16px;
+  color: #4b8b8c;
+  margin-top: 30px;
+  font-style: italic;
+}

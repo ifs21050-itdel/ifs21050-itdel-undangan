@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Undangan Baptisan dan Naik Sidi</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Body Styling */
+      body {
+        font-family: "Roboto", sans-serif;
+        color: #333;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        flex-direction: column;
+        background-image: url("bg2.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 30px;
+      }
+
+      /* Main Container */
+      .container {
+        width: 100%;
+        max-width: 900px;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 50px;
+        border-radius: 30px;
+        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        backdrop-filter: blur(8px); /* Blur effect for background */
+      }
+
+      /* Header Section */
+      .header {
+        font-size: 24px;
+        font-weight: 700;
+        color: hsl(0, 0%, 2%);
+        margin-bottom: 20px;
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+        font-family: "Lora", serif;
+      }
+
+      /* Family Name Section */
+      .family-name {
+        font-size: 28px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      /* Event Title Section */
+      .event-title {
+        font-size: 60px;
+        font-weight: 800;
+        color: #e86c60;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+        font-family: "Lora", serif;
+      }
+
+      /* Content Text */
+      .content {
+        font-size: 22px;
+        line-height: 1.8;
+        margin-bottom: 30px;
+        color: #333;
+      }
+
+      .content p {
+        margin: 24px 0;
+        font-weight: 400;
+      }
+
+      /* Countdown Timer Section */
+      .timer {
+        background: #ff7366;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        width: auto;
+      }
+
+      .timer div {
+        margin: 0 10px;
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      /* Event Details Section */
+      .details {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 25px;
+        border-radius: 15px;
+        margin-bottom: 30px;
+        color: #333;
+      }
+
+      .details p {
+        font-size: 18px;
+        margin: 12px 0;
+      }
+
+      .details strong {
+        color: #e86c60;
+        font-weight: bold;
+      }
+
+      /* Waktu & Tempat Section */
+      .time-location {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 25px;
+        border-radius: 15px;
+        margin-bottom: 30px;
+        color: #333;
+        border: 1px solid #e86c60;
+      }
+
+      .time-location h3 {
+        font-size: 24px;
+        font-weight: 50;
+        margin-bottom: 15px;
+        color: #e86c60;
+      }
+
+      .time-location p {
+        font-size: 14px;
+        margin: 8px 0;
+      }
+
+      /* Footer with RSVP Button */
+      .footer {
+        margin-top: 50px;
+      }
+
+      .footer a {
+        display: inline-block;
+        background-color: #ff7366;
+        color: white;
+        padding: 18px 50px;
+        font-size: 22px;
+        text-transform: uppercase;
+        font-weight: 600;
+        border-radius: 35px;
+        text-decoration: none;
+        letter-spacing: 2px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+      }
+
+      .footer a:hover {
+        background-color: #e86c60;
+        color: #fff;
+        transform: translateY(-3px);
+      }
+
+      /* Mobile responsiveness */
+      @media (max-width: 768px) {
+        .container {
+          padding: 25px;
+        }
+
+        .event-title {
+          font-size: 48px;
+        }
+
+        .content {
+          font-size: 18px;
+        }
+
+        .footer a {
+          font-size: 18px;
+          padding: 15px 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="family-name">Keluarga J. Silaban/P. Purba</div>
+      <div class="header">Menyelenggarakan acara,</div>
+      <div class="event-title">Undangan Acara Baptisan dan Naik Sidi</div>
+      <div class="content">
+        <p>
+          Dengan segala kerendahan hati, kami mengundang Bapak/Ibu/Saudara/i
+          untuk menghadiri acara,
+        </p>
+        <p>Acara Baptisan Reyan Joash Silaban</p>
+        <p>&</p>
+        <p>Acara Naik Sidi Martha Geby Lestari Silaban.</p>
+        <p>
+          Kami sangat berharap Bapak/Ibu/Saudara/i dapat menghadiri acara
+          tersebut.
+        </p>
+      </div>
+
+      <div class="timer" id="timer">
+        <div id="days">00</div>
+        <div>Hari</div>
+        <div id="hours">00</div>
+        <div>Jam</div>
+        <div id="minutes">00</div>
+        <div>Menit</div>
+        <div id="seconds">00</div>
+        <div>Detik</div>
+      </div>
+
+      <div class="time-location">
+        <h3>Waktu & Tempat</h3>
+        <p><strong>Waktu:</strong> Minggu, 30 Maret 2025</p>
+        <p><strong>Pukul:</strong> 10:00 WIB</p>
+        <p>
+          <strong>Tempat:</strong> Aeklung, No. 229 Doloksanggul, Humbang
+          Hasundutan
+        </p>
+      </div>
+
+      <div class="footer">
+        <p>Harap konfirmasi kehadiran Anda melalui tombol di bawah ini:</p>
+
+        <a href="mailto:tasyaae0215@gmail.com">Konfirmasi Kehadiran</a>
+      </div>
+    </div>
+
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Mar 30, 2025 10:00:00").getTime();
+
+      // Update the countdown every 1 second
+      var x = setInterval(function () {
+        // Get the current date and time
+        var now = new Date().getTime();
+
+        // Find the time remaining
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes, and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the elements
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+
+        // If the countdown is finished, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("timer").innerHTML = "Acara Dimulai!";
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
