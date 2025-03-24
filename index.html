@@ -5,195 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Undangan Baptisan dan Naik Sidi</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
     <style>
-      /* Reset */
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
 
-      /* Body Styling */
       body {
-        font-family: "Roboto", sans-serif;
-        color: #333;
-        background-color: #f4f4f4;
+        font-family: "Poppins", sans-serif;
+        background: url("https://source.unsplash.com/1600x900/?luxury,classic")
+          no-repeat center center/cover;
         display: flex;
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-        flex-direction: column;
-        background-image: url("bg2.jpg");
-        background-size: cover;
-        background-position: center;
         padding: 30px;
       }
 
-      /* Main Container */
       .container {
-        width: 100%;
-        max-width: 900px;
-        background: rgba(255, 255, 255, 0.9);
-        padding: 50px;
-        border-radius: 30px;
-        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+        max-width: 750px;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
         text-align: center;
-        position: relative;
-        overflow: hidden;
-        backdrop-filter: blur(8px); /* Blur effect for background */
+        border: 2px solid #b29577;
       }
 
-      /* Header Section */
-      .header {
-        font-size: 24px;
-        font-weight: 700;
-        color: hsl(0, 0%, 2%);
-        margin-bottom: 20px;
-        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
-        font-family: "Lora", serif;
-      }
-
-      /* Family Name Section */
       .family-name {
         font-size: 28px;
         font-weight: 600;
-        color: #333;
+        color: #8b5e3b;
+        font-family: "Great Vibes", cursive;
         margin-bottom: 10px;
       }
 
-      /* Event Title Section */
       .event-title {
-        font-size: 60px;
-        font-weight: 800;
-        color: #e86c60;
-        margin-bottom: 40px;
-        text-transform: uppercase;
-        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-        font-family: "Lora", serif;
-      }
-
-      /* Content Text */
-      .content {
-        font-size: 22px;
-        line-height: 1.8;
-        margin-bottom: 30px;
-        color: #333;
+        font-size: 50px;
+        font-weight: 700;
+        color: #4a2c2a;
+        margin-bottom: 20px;
+        font-family: "Playfair Display", serif;
       }
 
       .content p {
-        margin: 24px 0;
+        font-size: 20px;
+        margin: 15px 0;
+        color: #333;
         font-weight: 400;
       }
 
-      /* Countdown Timer Section */
-      .timer {
-        background: #ff7366;
-        color: #fff;
-        padding: 10px 20px;
-        border-radius: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 30px;
-        font-size: 20px;
-        font-weight: 500;
-        text-align: center;
-        width: auto;
-      }
-
-      .timer div {
-        margin: 0 10px;
-        font-size: 20px;
-        font-weight: 500;
-      }
-
-      /* Event Details Section */
-      .details {
-        background: rgba(255, 255, 255, 0.9);
-        padding: 25px;
-        border-radius: 15px;
-        margin-bottom: 30px;
-        color: #333;
-      }
-
-      .details p {
+      .bible-verse {
+        font-style: italic;
         font-size: 18px;
-        margin: 12px 0;
+        color: #6d4c41;
+        margin-top: 20px;
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.85);
+        border-left: 4px solid #8b5e3b;
       }
 
-      .details strong {
-        color: #e86c60;
-        font-weight: bold;
-      }
-
-      /* Waktu & Tempat Section */
-      .time-location {
-        background: rgba(255, 255, 255, 0.9);
-        padding: 25px;
-        border-radius: 15px;
-        margin-bottom: 30px;
+      .thank-you {
+        font-size: 18px;
         color: #333;
-        border: 1px solid #e86c60;
+        margin-top: 25px;
+        font-weight: 500;
+      }
+
+      .timer {
+        background: #8b5e3b;
+        color: white;
+        padding: 15px;
+        border-radius: 10px;
+        display: inline-block;
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 25px;
+        width: 100%;
+      }
+
+      .time-location {
+        background: rgba(255, 255, 255, 0.85);
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        border-left: 5px solid #8b5e3b;
       }
 
       .time-location h3 {
         font-size: 24px;
-        font-weight: 50;
-        margin-bottom: 15px;
-        color: #e86c60;
+        color: #8b5e3b;
+        margin-bottom: 8px;
       }
 
-      .time-location p {
-        font-size: 14px;
-        margin: 8px 0;
-      }
-
-      /* Footer with RSVP Button */
-      .footer {
-        margin-top: 50px;
-      }
-
-      .footer a {
-        display: inline-block;
-        background-color: #ff7366;
-        color: white;
-        padding: 18px 50px;
-        font-size: 22px;
-        text-transform: uppercase;
-        font-weight: 600;
-        border-radius: 35px;
-        text-decoration: none;
-        letter-spacing: 2px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-        transition: all 0.3s ease;
-      }
-
-      .footer a:hover {
-        background-color: #e86c60;
-        color: #fff;
-        transform: translateY(-3px);
-      }
-
-      /* Mobile responsiveness */
       @media (max-width: 768px) {
         .container {
-          padding: 25px;
+          padding: 30px;
         }
 
         .event-title {
-          font-size: 48px;
+          font-size: 42px;
         }
 
-        .content {
+        .content p {
           font-size: 18px;
         }
 
-        .footer a {
+        .timer {
           font-size: 18px;
-          padding: 15px 40px;
         }
       }
     </style>
@@ -201,63 +124,48 @@
   <body>
     <div class="container">
       <div class="family-name">Keluarga J. Silaban/P. Purba</div>
-      <div class="header">Menyelenggarakan acara,</div>
-      <div class="event-title">Undangan Acara Baptisan dan Naik Sidi</div>
+      <div class="event-title">Undangan Baptisan & Naik Sidi</div>
       <div class="content">
         <p>
-          Dengan segala kerendahan hati, kami mengundang Bapak/Ibu/Saudara/i
-          untuk menghadiri acara,
+          Dengan penuh sukacita, kami mengundang Bapak/Ibu/Saudara/i untuk
+          menghadiri acara:
         </p>
-        <p>Acara Baptisan Reyan Joash Silaban</p>
-        <p>&</p>
-        <p>Acara Naik Sidi Martha Geby Lestari Silaban.</p>
-        <p>
-          Kami sangat berharap Bapak/Ibu/Saudara/i dapat menghadiri acara
-          tersebut.
-        </p>
+        <p><strong>Baptisan Reyan Joash Silaban</strong></p>
+        <p>dan</p>
+        <p><strong>Naik Sidi Martha Geby Lestari Silaban</strong></p>
       </div>
 
-      <div class="timer" id="timer">
-        <div id="days">00</div>
-        <div>Hari</div>
-        <div id="hours">00</div>
-        <div>Jam</div>
-        <div id="minutes">00</div>
-        <div>Menit</div>
-        <div id="seconds">00</div>
-        <div>Detik</div>
+      <div class="bible-verse">
+        "Karena kita semua telah dibaptis dalam satu Roh menjadi satu tubuh,
+        baik orang Yahudi maupun orang Yunani, baik budak maupun orang merdeka.
+        Dan kita semua diberi minum dari satu Roh." <br />
+        <strong>(1 Korintus 12:13)</strong>
       </div>
+
+      <div class="timer" id="timer">00 Hari 00 Jam 00 Menit 00 Detik</div>
 
       <div class="time-location">
         <h3>Waktu & Tempat</h3>
-        <p><strong>Waktu:</strong> Minggu, 30 Maret 2025</p>
-        <p><strong>Pukul:</strong> 10:00 WIB</p>
+        <p><strong>Tanggal:</strong> Minggu, 30 Maret 2025</p>
+        <p><strong>Waktu:</strong> 10:00 WIB</p>
         <p>
           <strong>Tempat:</strong> Aeklung, No. 229 Doloksanggul, Humbang
           Hasundutan
         </p>
       </div>
 
-      <div class="footer">
-        <p>Harap konfirmasi kehadiran Anda melalui tombol di bawah ini:</p>
-
-        <a href="mailto:tasyaae0215@gmail.com">Konfirmasi Kehadiran</a>
+      <div class="thank-you">
+        Kami mengucapkan terima kasih atas doa dan kehadiran Bapak/Ibu/Saudara/i
+        yang telah mendukung perjalanan iman anak-anak kami. Tuhan memberkati!
       </div>
     </div>
 
     <script>
-      // Set the date we're counting down to
       var countDownDate = new Date("Mar 30, 2025 10:00:00").getTime();
-
-      // Update the countdown every 1 second
       var x = setInterval(function () {
-        // Get the current date and time
         var now = new Date().getTime();
-
-        // Find the time remaining
         var distance = countDownDate - now;
 
-        // Time calculations for days, hours, minutes, and seconds
         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
         var hours = Math.floor(
           (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
@@ -265,13 +173,16 @@
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        // Display the result in the elements
-        document.getElementById("days").innerHTML = days;
-        document.getElementById("hours").innerHTML = hours;
-        document.getElementById("minutes").innerHTML = minutes;
-        document.getElementById("seconds").innerHTML = seconds;
+        document.getElementById("timer").innerHTML =
+          days +
+          " Hari " +
+          hours +
+          " Jam " +
+          minutes +
+          " Menit " +
+          seconds +
+          " Detik";
 
-        // If the countdown is finished, write some text
         if (distance < 0) {
           clearInterval(x);
           document.getElementById("timer").innerHTML = "Acara Dimulai!";
